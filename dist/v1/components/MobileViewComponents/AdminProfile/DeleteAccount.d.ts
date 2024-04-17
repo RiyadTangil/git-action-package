@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import "./DeleteAccount.css";
-declare function DeleteAccount(): JSX.Element;
+
+declare function DeleteAccount(): import("react/jsx-runtime").JSX.Element;
 export default DeleteAccount;
 //# sourceMappingURL=DeleteAccount.d.ts.map

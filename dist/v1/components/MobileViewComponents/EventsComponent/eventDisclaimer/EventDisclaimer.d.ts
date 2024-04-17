@@ -1,4 +1,5 @@
-import React, { Dispatch, SetStateAction } from "react";
+import { default as React, Dispatch, SetStateAction } from 'react';
+
 interface DisclaimerModalProps {
     showDisclaimer: boolean;
     handleDisclaimerStatus: (val: boolean) => void;

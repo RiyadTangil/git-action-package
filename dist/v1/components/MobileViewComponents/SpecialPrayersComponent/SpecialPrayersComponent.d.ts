@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import "./specialPrayer.css";
-declare function SpecialPrayersComponent(): JSX.Element;
+
+declare function SpecialPrayersComponent(): import("react/jsx-runtime").JSX.Element;
 export default SpecialPrayersComponent;
 //# sourceMappingURL=SpecialPrayersComponent.d.ts.map

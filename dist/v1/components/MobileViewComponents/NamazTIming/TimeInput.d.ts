@@ -1,4 +1,5 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from 'react';
+
 type propsType = {
     label?: string;
     timingStatus?: string;
@@ -6,6 +7,6 @@ type propsType = {
     timingRef: string;
     redOnly?: boolean;
 };
-declare const TimeInput: ({ label, timeSetter, timingRef, timingStatus, }: propsType) => JSX.Element;
+declare const TimeInput: ({ label, timeSetter, timingRef, timingStatus, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default TimeInput;
 //# sourceMappingURL=TimeInput.d.ts.map

@@ -1,16 +1,12 @@
-import { w as ta, d as na, a as ra, i as J, bz as _, P as x, c as Q, bA as sa, bB as ia, aJ as H, bd as oa, ao as S, y as a, bt as la, Y as k, ap as ca } from "./index-XkptO5g9.mjs";
+import { av as ta, aw as na, A as ra, ax as J, ay as _, P as x, az as Q, aA as sa, aB as ia, u as H, au as oa, a as S, ae as la, j as a, ab as ca, aC as X, m as k, d as da } from "./index-biwjac3z.mjs";
 import * as U from "react";
 import { useState as m, useEffect as z } from "react";
-import { m as w, D as da } from "./DatePicker-8NDaDOhh.mjs";
-import { f as ma, c as X } from "./Dashboard-wU64Oe5M.mjs";
-import { B as ga } from "./BackButton-AhD4OsYY.mjs";
-import { N as ha } from "./NoEventAvaliable-vBaWXttD.mjs";
-import { E as fa } from "./EventPageFormComponent-9XBvpM1Z.mjs";
-import { N as pa } from "./NoImgFound-8bVP7rb5.mjs";
-import { C as ua } from "./CANCEL-NjkmKVms.mjs";
-import "react-dom";
-import "./swiper-bundle-HqgJZv8V.mjs";
-import "./index.esm-dKdnsyf6.mjs";
+import { m as w, D as ma } from "./DatePicker-jT2WqCXt.mjs";
+import { B as ga } from "./BackButton-DDBz7tDb.mjs";
+import { N as ha } from "./NoEventAvaliable-B5q8OwYP.mjs";
+import { E as fa } from "./EventPageFormComponent-BSXk_kM2.mjs";
+import { N as pa } from "./NoImgFound-BcBAx5NC.mjs";
+import { C as ua } from "./CANCEL-YyRuUoYy.mjs";
 var Z = 10, q = 4, va = function(e) {
   return {
     /* Styles applied to the root element. */
@@ -357,7 +353,7 @@ const xa = ta(va, {
     let t = M.masjids[0];
     u(t);
   }, [p]), z(() => {
-    M.masjids[0] && P(ma(M.masjids[0])).then((f) => {
+    M.masjids[0] && P(la(M.masjids[0])).then((f) => {
       f.message === "Success" && Y(f.data);
     });
   }, [p]);
@@ -410,7 +406,7 @@ const xa = ta(va, {
     }
   }, [e, n, O]), /* @__PURE__ */ a.jsxs(a.Fragment, { children: [
     /* @__PURE__ */ a.jsxs("div", { className: "TopContainerForBackAndView", children: [
-      /* @__PURE__ */ a.jsx("div", { className: "MazjidBackToMainPage", children: /* @__PURE__ */ a.jsx(la, { to: "/feed", style: { textDecoration: "none", color: "white" }, children: /* @__PURE__ */ a.jsx(
+      /* @__PURE__ */ a.jsx("div", { className: "MazjidBackToMainPage", children: /* @__PURE__ */ a.jsx(ca, { to: "/feed", style: { textDecoration: "none", color: "white" }, children: /* @__PURE__ */ a.jsx(
         "img",
         {
           src: ga,
@@ -468,7 +464,7 @@ const xa = ta(va, {
         }) : /* @__PURE__ */ a.jsx(a.Fragment, { children: /* @__PURE__ */ a.jsx("div", { className: "NoEventsAvailable", children: /* @__PURE__ */ a.jsx("img", { src: ha, className: "NoEventAvaliable" }) }) }) })
       ] }),
       /* @__PURE__ */ a.jsx("div", { className: "EventPageLeftContainer", children: /* @__PURE__ */ a.jsx(
-        da,
+        ma,
         {
           autoOk: !0,
           orientation: "landscape",
@@ -566,11 +562,11 @@ const ba = ({
     }) }),
     /* @__PURE__ */ a.jsx("div", { className: "CancelledEventsPaginationComponnet" })
   ] }) });
-}, Fa = () => {
+}, Ya = () => {
   let n = S((j) => j.admin);
   const [e, i] = m(!1), [r, l] = m(!1), [g, N] = m([]);
   m([]), H();
-  const s = ca(), C = /* @__PURE__ */ new Date(), d = k(C).startOf("month").format("YYYY-MM-DD"), p = k(C).endOf("month").format("YYYY-MM-DD"), [u, o] = m(), [Y, O] = m(
+  const s = da(), C = /* @__PURE__ */ new Date(), d = k(C).startOf("month").format("YYYY-MM-DD"), p = k(C).endOf("month").format("YYYY-MM-DD"), [u, o] = m(), [Y, O] = m(
     []
   ), [B, y] = m([]), [P, h] = m([]), [E, $] = m();
   return z(() => {
@@ -647,5 +643,5 @@ const ba = ({
   ] }) }) }) });
 };
 export {
-  Fa as default
+  Ya as default
 };

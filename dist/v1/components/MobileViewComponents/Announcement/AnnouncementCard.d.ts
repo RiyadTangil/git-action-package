@@ -1,4 +1,3 @@
-/// <reference types="react" />
 type announcement = {
     id: string | undefined;
     title: string | undefined;
@@ -12,6 +11,6 @@ type PropsType = {
     description?: string;
     announcementData?: announcement | undefined;
 };
-declare function AnnouncementCard({ handleAnnouncement, detailView, title, description, announcementData, }: PropsType): JSX.Element;
+declare function AnnouncementCard({ handleAnnouncement, detailView, title, description, announcementData, }: PropsType): import("react/jsx-runtime").JSX.Element;
 export default AnnouncementCard;
 //# sourceMappingURL=AnnouncementCard.d.ts.map

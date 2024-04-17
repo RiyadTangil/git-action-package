@@ -13,7 +13,7 @@ export declare const TimeColumns: ({
     title: string;
     width: number;
     render: (data: any) => string;
-    editComponent: (props: EditComponentProps) => JSX.Element;
+    editComponent: (props: EditComponentProps) => import("react/jsx-runtime").JSX.Element;
 })[];
 export {};
 //# sourceMappingURL=TimeColumns.d.ts.map

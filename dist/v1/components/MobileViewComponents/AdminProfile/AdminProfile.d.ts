@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import "../AdminProfile/AdminProfile.css";
-declare function AdminProfile(): JSX.Element;
+
+declare function AdminProfile(): import("react/jsx-runtime").JSX.Element;
 export default AdminProfile;
 //# sourceMappingURL=AdminProfile.d.ts.map

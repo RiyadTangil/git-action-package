@@ -1,4 +1,4 @@
-import "react-calendar/dist/Calendar.css";
-declare const EventsViewCalender: () => JSX.Element;
+
+declare const EventsViewCalender: () => import("react/jsx-runtime").JSX.Element;
 export default EventsViewCalender;
 //# sourceMappingURL=EventsViewCalender.d.ts.map

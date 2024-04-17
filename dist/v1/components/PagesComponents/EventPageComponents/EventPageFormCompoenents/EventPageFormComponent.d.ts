@@ -1,6 +1,6 @@
-import { Dispatch, SetStateAction } from "react";
-import "./EventPageFormComponent.css";
-import { EventType } from "../../../../redux/Types";
+import { EventType } from '../../../../redux/Types';
+import { Dispatch, SetStateAction } from 'react';
+
 type propsType = {
     ComponentPurpose: string;
     EventDetails: EventType | undefined;
@@ -11,6 +11,6 @@ type propsType = {
     EventPhotos?: any;
     AddingEvent?: boolean;
 };
-declare const EventPageFormComponent: ({ ComponentPurpose, EventDetails, setAddingEvent, AddingEvent, setEventDetails, setIsUpdating, setEventPhotos, EventPhotos, }: propsType) => JSX.Element;
+declare const EventPageFormComponent: ({ ComponentPurpose, EventDetails, setAddingEvent, AddingEvent, setEventDetails, setIsUpdating, setEventPhotos, EventPhotos, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default EventPageFormComponent;
 //# sourceMappingURL=EventPageFormComponent.d.ts.map

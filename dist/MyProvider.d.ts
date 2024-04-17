@@ -1,6 +1,7 @@
-import React from "react";
+import { default as React } from 'react';
+
 export declare const MyProvider: ({ children }: {
     children: React.ReactNode;
-}) => JSX.Element;
+}) => import("react/jsx-runtime").JSX.Element;
 export default MyProvider;
 //# sourceMappingURL=MyProvider.d.ts.map

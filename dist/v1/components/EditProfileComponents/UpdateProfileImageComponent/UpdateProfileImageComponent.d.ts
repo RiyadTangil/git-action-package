@@ -1,3 +1,4 @@
+
 type propsType = {
     ParentComponentType: string;
     OperationType: string;
@@ -6,6 +7,6 @@ type propsType = {
     setIsUpdating?: any;
     MazjidId: string;
 };
-declare const UpdateProfileImageComponent: ({ ParentComponentType, OperationType, EventDetails, setEventDetails, setIsUpdating, MazjidId, }: propsType) => JSX.Element;
+declare const UpdateProfileImageComponent: ({ ParentComponentType, OperationType, EventDetails, setEventDetails, setIsUpdating, MazjidId, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default UpdateProfileImageComponent;
 //# sourceMappingURL=UpdateProfileImageComponent.d.ts.map

@@ -1,4 +1,3 @@
-/// <reference types="react" />
-declare function CustomMenu(): JSX.Element;
+declare function CustomMenu(): import("react/jsx-runtime").JSX.Element;
 export default CustomMenu;
 //# sourceMappingURL=CustomMenu.d.ts.map

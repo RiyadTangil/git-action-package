@@ -3,5 +3,5 @@ declare function EditableRow({ editFormData, handleEditFormChange, handleCancelC
     editFormData: any;
     handleEditFormChange: any;
     handleCancelClick: any;
-}): JSX.Element;
+}): import("react/jsx-runtime").JSX.Element;
 //# sourceMappingURL=EditTableRow.d.ts.map

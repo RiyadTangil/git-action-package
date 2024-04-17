@@ -1,7 +1,6 @@
-import { dL as i, dM as m } from "./index-XkptO5g9.mjs";
-import "react";
-import "react-dom";
+import { ex as r, q as s, ey as d } from "./index-biwjac3z.mjs";
 export {
-  i as App,
-  m as MyProvider
+  r as App,
+  s as MasjidAdmin,
+  d as MyProvider
 };

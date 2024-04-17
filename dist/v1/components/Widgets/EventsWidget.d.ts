@@ -1,5 +1,5 @@
-import React from "react";
-import "./EventsWidget.css";
+import { default as React } from 'react';
+
 interface EventsWidgetProps {
     widgetData: any;
 }

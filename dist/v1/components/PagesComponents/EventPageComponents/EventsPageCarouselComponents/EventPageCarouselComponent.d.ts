@@ -1,6 +1,6 @@
-import { Dispatch, SetStateAction } from "react";
-import "./EventPageCarouselComponent.css";
-import { EventType, ResponseType } from "../../../../redux/Types";
+import { EventType, ResponseType } from '../../../../redux/Types';
+import { Dispatch, SetStateAction } from 'react';
+
 type EventDaysType = {
     date: string;
     end: string;
@@ -18,6 +18,6 @@ type propsType = {
     setMasjidEventsData: Dispatch<SetStateAction<any>>;
     setEventDays: Dispatch<SetStateAction<EventDaysType[]>>;
 };
-declare const EventPageCarouselComponent: ({ MasjidEventsData, EventDays, CurrentMonthEventDays, setCancelledEvents, setViewWingCancelledEvents, ViewWingCancelledEvents, SetCurrentDayEvents, setCurrentMonthEventDays, setMasjidEventsData, setEventDays, }: propsType) => JSX.Element;
+declare const EventPageCarouselComponent: ({ MasjidEventsData, EventDays, CurrentMonthEventDays, setCancelledEvents, setViewWingCancelledEvents, ViewWingCancelledEvents, SetCurrentDayEvents, setCurrentMonthEventDays, setMasjidEventsData, setEventDays, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default EventPageCarouselComponent;
 //# sourceMappingURL=EventPageCarouselComponent.d.ts.map

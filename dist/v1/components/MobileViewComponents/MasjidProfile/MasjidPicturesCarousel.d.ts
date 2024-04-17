@@ -1,3 +1,4 @@
+
 type propsType = {
     MasjidPhotos: {
         url: string;
@@ -6,6 +7,6 @@ type propsType = {
     MasjidId: string;
     setUploadAllow: (val: boolean) => void;
 };
-declare const MasjidPicturesCarousel: ({ MasjidPhotos, MasjidId, setUploadAllow, }: propsType) => JSX.Element;
+declare const MasjidPicturesCarousel: ({ MasjidPhotos, MasjidId, setUploadAllow, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default MasjidPicturesCarousel;
 //# sourceMappingURL=MasjidPicturesCarousel.d.ts.map

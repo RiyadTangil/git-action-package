@@ -1,4 +1,5 @@
-import React, { Dispatch, SetStateAction } from "react";
+import { default as React, Dispatch, SetStateAction } from 'react';
+
 interface UpdateConfirmationProps {
     open: boolean;
     setOpen: Dispatch<SetStateAction<boolean>>;

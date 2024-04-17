@@ -1,4 +1,4 @@
-declare const Store: import("@reduxjs/toolkit/dist/configureStore").ToolkitStore<import("redux").CombinedState<{
+declare const Store: import('@reduxjs/toolkit/dist/configureStore').ToolkitStore<import("redux").EmptyObject & {
     admin: import("./Types").User;
     selectedDate: string[];
     latestAdminEvents: any;
@@ -13,7 +13,7 @@ declare const Store: import("@reduxjs/toolkit/dist/configureStore").ToolkitStore
     EventCompletion: any;
     locationReducer: import("./reducers/MasjidReducers/FetchingNearByMasjids").LocationState;
     nearbyMasjidsReducer: import("./reducers/MasjidReducers/FetchingNearByMasjids").NearbyMasjidsState;
-}>, import("./Types").Action | import("./Types").CommonActionType | import("./Types").UserActionType | import("./Types").SidebarTypeAction | import("./Types").EventActionType | {
+}, import("./Types").Action | import("./Types").CommonActionType | import("./Types").UserActionType | import("./Types").SidebarTypeAction | import("./Types").EventActionType | {
     type: string;
     payload: string[];
 }, [import("@reduxjs/toolkit").ThunkMiddleware<import("redux").CombinedState<{

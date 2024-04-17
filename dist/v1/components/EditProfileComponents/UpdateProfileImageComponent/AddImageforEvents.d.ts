@@ -1,5 +1,5 @@
-import { Dispatch, SetStateAction } from "react";
-import "./FileUploadEvent.scss";
+import { Dispatch, SetStateAction } from 'react';
+
 type propsType = {
     EventId: string;
     MasjidId: string;
@@ -10,6 +10,6 @@ type propsType = {
     setEventUploadPhoto: Dispatch<SetStateAction<File | undefined>>;
     setMasjidUploadPhoto: Dispatch<SetStateAction<File | undefined>>;
 };
-declare const FileUploadEvent: ({ EventId, MasjidId, eventPhotos, setEventsPhotos, DraggedImage, UploadAllow, setEventUploadPhoto, setMasjidUploadPhoto, }: propsType) => JSX.Element;
+declare const FileUploadEvent: ({ EventId, MasjidId, eventPhotos, setEventsPhotos, DraggedImage, UploadAllow, setEventUploadPhoto, setMasjidUploadPhoto, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default FileUploadEvent;
 //# sourceMappingURL=AddImageforEvents.d.ts.map

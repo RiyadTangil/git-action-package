@@ -1,6 +1,6 @@
-import React from "react";
-import { TileDisabledFunc } from "react-calendar";
-import "./Calendar.css";
+import { TileDisabledFunc } from 'react-calendar';
+import { default as React } from 'react';
+
 interface CustomCalenderProps {
     onDateSelect: (selectedDate: Date) => void;
     value: Date;
@@ -11,6 +11,6 @@ interface CustomCalenderProps {
     minDate?: Date;
     tileDisabled: TileDisabledFunc;
 }
-declare function CustomCalender({ onDateSelect, value, setValue, tileContent, minDate, tileDisabled, }: CustomCalenderProps): JSX.Element;
+declare function CustomCalender({ onDateSelect, value, setValue, tileContent, minDate, tileDisabled, }: CustomCalenderProps): import("react/jsx-runtime").JSX.Element;
 export default CustomCalender;
 //# sourceMappingURL=CustomCalender.d.ts.map

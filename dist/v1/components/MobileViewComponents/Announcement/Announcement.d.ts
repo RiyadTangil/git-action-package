@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import "./Announcement.css";
-declare function Announcement(): JSX.Element;
+
+declare function Announcement(): import("react/jsx-runtime").JSX.Element;
 export default Announcement;
 //# sourceMappingURL=Announcement.d.ts.map

@@ -1,4 +1,5 @@
 import { Dispatch } from 'redux';
+
 export declare const EventCompletionAction: (value: boolean) => (dispatch: Dispatch) => Promise<{
     success: boolean;
     message: any;

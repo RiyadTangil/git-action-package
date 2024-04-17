@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import "./ChagePassword.css";
-declare function ChangePassword(): JSX.Element;
+
+declare function ChangePassword(): import("react/jsx-runtime").JSX.Element;
 export default ChangePassword;
 //# sourceMappingURL=ChangePassword.d.ts.map

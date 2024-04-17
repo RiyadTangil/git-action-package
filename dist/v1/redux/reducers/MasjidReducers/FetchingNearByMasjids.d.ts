@@ -1,4 +1,5 @@
-import { Action } from "../../Types";
+import { Action } from '../../Types';
+
 export interface LocationState {
     city: string;
     latitude: string;

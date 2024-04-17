@@ -1,4 +1,4 @@
-declare const indexReducer: import("redux").Reducer<import("redux").CombinedState<{
+declare const indexReducer: import('redux').Reducer<import("redux").CombinedState<{
     admin: import("../Types").User;
     selectedDate: string[];
     latestAdminEvents: any;

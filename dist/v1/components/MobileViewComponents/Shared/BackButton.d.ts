@@ -1,5 +1,5 @@
 declare const BackButton: ({ handleBackBtn }: {
     handleBackBtn: () => void;
-}) => JSX.Element;
+}) => import("react/jsx-runtime").JSX.Element;
 export default BackButton;
 //# sourceMappingURL=BackButton.d.ts.map

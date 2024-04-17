@@ -1,4 +1,5 @@
-import { SidebarTypeAction } from "../../Types";
+import { SidebarTypeAction } from '../../Types';
+
 type InitialState = {
     snackbarOpen: boolean;
     snackbarType: string;

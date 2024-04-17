@@ -1,5 +1,5 @@
-import React from "react";
-import "./Announcement.css";
+import { default as React } from 'react';
+
 interface AnnouncementWidgetProps {
     widgetData: any;
 }

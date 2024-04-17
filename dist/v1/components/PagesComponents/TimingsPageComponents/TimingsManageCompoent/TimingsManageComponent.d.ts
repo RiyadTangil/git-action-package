@@ -1,8 +1,6 @@
-import { SetStateAction, Dispatch } from "react";
-import "./TimingsManageComponent.css";
-import "react-date-range/dist/styles.css";
-import "react-date-range/dist/theme/default.css";
-import { PrayerTimings } from "../../../../redux/Types";
+import { PrayerTimings } from '../../../../redux/Types';
+import { SetStateAction, Dispatch } from 'react';
+
 type MasjidTm = {
     namazName: string;
     azaanTime: number;
@@ -15,6 +13,6 @@ type propsType = {
     APITimings: any;
     setAPITimings: Dispatch<SetStateAction<MasjidTm[]>>;
 };
-declare const TimingsManageComponent: ({ CurrentMonthTimings, TodaysTimings, APITimings, setAPITimings, }: propsType) => JSX.Element;
+declare const TimingsManageComponent: ({ CurrentMonthTimings, TodaysTimings, APITimings, setAPITimings, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default TimingsManageComponent;
 //# sourceMappingURL=TimingsManageComponent.d.ts.map

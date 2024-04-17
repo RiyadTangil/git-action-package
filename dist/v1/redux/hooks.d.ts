@@ -1,8 +1,9 @@
-import { TypedUseSelectorHook } from "react-redux";
-import { ThunkDispatch } from "redux-thunk";
-import { Action } from "redux";
-import { RootState } from "./store";
-export declare const useAppDispatch: () => ThunkDispatch<import("redux").CombinedState<{
+import { RootState } from './store';
+import { Action } from 'redux';
+import { ThunkDispatch } from 'redux-thunk';
+import { TypedUseSelectorHook } from 'react-redux';
+
+export declare const useAppDispatch: () => ThunkDispatch<import('redux').CombinedState<{
     admin: import("./Types").User;
     selectedDate: string[];
     latestAdminEvents: any;
@@ -17,7 +18,7 @@ export declare const useAppDispatch: () => ThunkDispatch<import("redux").Combine
     EventCompletion: any;
     locationReducer: import("./reducers/MasjidReducers/FetchingNearByMasjids").LocationState;
     nearbyMasjidsReducer: import("./reducers/MasjidReducers/FetchingNearByMasjids").NearbyMasjidsState;
-}>, undefined, import("redux").AnyAction> & import("redux").Dispatch<import("./Types").Action | import("./Types").CommonActionType | import("./Types").UserActionType | import("./Types").SidebarTypeAction | import("./Types").EventActionType | {
+}>, undefined, import('redux').AnyAction> & import('redux').Dispatch<import("./Types").Action | import("./Types").CommonActionType | import("./Types").UserActionType | import("./Types").SidebarTypeAction | import("./Types").EventActionType | {
     type: string;
     payload: string[];
 }>;

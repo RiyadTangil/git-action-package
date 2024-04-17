@@ -1,4 +1,5 @@
-import { FC } from "react";
+import { FC } from 'react';
+
 interface dropdownProps {
     statusHandler: (val: string) => void;
     timingStatus: string;

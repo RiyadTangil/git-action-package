@@ -1,4 +1,4 @@
-export declare const FetchEventByMasjidId: (eventId: string) => () => Promise<import("axios").AxiosResponse<any, any> | {
+export declare const FetchEventByMasjidId: (eventId: string) => () => Promise<import('axios').AxiosResponse<any, any> | {
     success: boolean;
     message: any;
 }>;

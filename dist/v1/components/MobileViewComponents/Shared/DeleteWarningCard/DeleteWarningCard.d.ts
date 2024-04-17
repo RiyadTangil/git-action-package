@@ -1,5 +1,5 @@
-import React from "react";
-import "./DeleteWarningCard.css";
+import { default as React } from 'react';
+
 interface DeleteWarningCardProps {
     onClose: () => void;
     onConfirm: () => void;

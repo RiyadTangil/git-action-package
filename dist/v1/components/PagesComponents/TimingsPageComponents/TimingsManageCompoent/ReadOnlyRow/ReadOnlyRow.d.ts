@@ -3,5 +3,5 @@ declare function ReadOnlyRow({ Namaz, handleEditClick, handleDeleteClick }: {
     Namaz: any;
     handleEditClick: any;
     handleDeleteClick: any;
-}): JSX.Element;
+}): import("react/jsx-runtime").JSX.Element;
 //# sourceMappingURL=ReadOnlyRow.d.ts.map

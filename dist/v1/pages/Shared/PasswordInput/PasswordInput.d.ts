@@ -5,6 +5,6 @@ type PropsType = {
     belowTx?: boolean;
     setShowPas: (val: boolean) => void;
 };
-declare const PasswordInput: ({ reference, pHolder, showPas, setShowPas, belowTx, }: PropsType) => JSX.Element;
+declare const PasswordInput: ({ reference, pHolder, showPas, setShowPas, belowTx, }: PropsType) => import("react/jsx-runtime").JSX.Element;
 export default PasswordInput;
 //# sourceMappingURL=PasswordInput.d.ts.map

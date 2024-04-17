@@ -1,4 +1,5 @@
-import React from "react";
+import { default as React } from 'react';
+
 type PropsType = {
     eventHandler: (val: any) => void;
     size?: string;
@@ -13,6 +14,6 @@ type PropsType = {
     children?: React.ReactNode;
     icon?: any;
 };
-declare const CustomBtn: ({ eventHandler, label, isLoading, bgColor, borderClr, TxColor, showIcon, isDisabled, size, hightSize, children, icon, }: PropsType) => JSX.Element;
+declare const CustomBtn: ({ eventHandler, label, isLoading, bgColor, borderClr, TxColor, showIcon, isDisabled, size, hightSize, children, icon, }: PropsType) => import("react/jsx-runtime").JSX.Element;
 export default CustomBtn;
 //# sourceMappingURL=CustomBtn.d.ts.map

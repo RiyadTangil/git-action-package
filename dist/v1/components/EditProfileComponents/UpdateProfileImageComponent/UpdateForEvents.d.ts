@@ -6,5 +6,5 @@ declare function UpdateForEvents({ ParentComponentType, OperationType, EventDeta
     setEventDetails: any;
     setIsUpdating: any;
     EventIds: any;
-}): JSX.Element;
+}): import("react/jsx-runtime").JSX.Element;
 //# sourceMappingURL=UpdateForEvents.d.ts.map

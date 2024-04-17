@@ -1,6 +1,6 @@
-import { Dispatch, SetStateAction } from "react";
-import "./EventProfileComponent.css";
-import { EventType } from "../../../redux/Types";
+import { EventType } from '../../../redux/Types';
+import { Dispatch, SetStateAction } from 'react';
+
 type propsType = {
     EventDetails: EventType;
     setIsUpdating: Dispatch<SetStateAction<boolean>>;
@@ -10,6 +10,6 @@ type propsType = {
     CurrentEventDetails: EventType | undefined;
     AdminMasjid: any;
 };
-declare const EventProfileComponent: ({ EventDetails, setIsUpdating, EventPhotos, CurrentEventDetails, AdminMasjid, }: propsType) => JSX.Element;
+declare const EventProfileComponent: ({ EventDetails, setIsUpdating, EventPhotos, CurrentEventDetails, AdminMasjid, }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default EventProfileComponent;
 //# sourceMappingURL=EventProfileComponent.d.ts.map

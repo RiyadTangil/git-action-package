@@ -1,4 +1,5 @@
-import { Masjid } from "../../redux/Types";
+import { Masjid } from '../../redux/Types';
+
 export declare const UtcDateConverter: (data: string, tZone: string) => string;
 export declare const tmFormatter: (tm: number | undefined, tZone: string) => string;
 export declare const dateFormatter: (date: Date | string) => string;

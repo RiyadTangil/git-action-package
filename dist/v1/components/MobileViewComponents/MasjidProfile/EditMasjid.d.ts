@@ -1,8 +1,6 @@
-import { Dispatch, SetStateAction, FC } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import "./EditMasjid.css";
-import { Masjid } from "../../../redux/Types";
+import { Masjid } from '../../../redux/Types';
+import { Dispatch, SetStateAction, FC } from 'react';
+
 interface EditMasjidProps {
     masjid: Masjid;
     openMasjidEdit: boolean;

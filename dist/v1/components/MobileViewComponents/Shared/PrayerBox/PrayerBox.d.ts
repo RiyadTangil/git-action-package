@@ -1,7 +1,6 @@
-import React from "react";
-import "./PrayerBox.css";
-import { NamajTiming } from "../../../../redux/Types";
-import "../../../Widgets/PrayerTimgeWidgets.css";
+import { NamajTiming } from '../../../../redux/Types';
+import { default as React } from 'react';
+
 export declare const icons: {
     [key: string]: string;
 };
@@ -14,6 +13,6 @@ type propsType = {
     reloader?: () => void;
     date?: string;
 };
-declare const PrayerBox: ({ tZone, prayer, children, reloader, date }: propsType) => JSX.Element;
+declare const PrayerBox: ({ tZone, prayer, children, reloader, date }: propsType) => import("react/jsx-runtime").JSX.Element;
 export default PrayerBox;
 //# sourceMappingURL=PrayerBox.d.ts.map

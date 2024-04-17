@@ -1,4 +1,5 @@
-import React from "react";
+import { default as React } from 'react';
+
 interface RouteObject {
     path: string;
     element: JSX.Element;

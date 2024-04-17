@@ -1,5 +1,6 @@
-import { Dispatch } from "redux";
-import { UserActionType } from "../../Types";
+import { UserActionType } from '../../Types';
+import { Dispatch } from 'redux';
+
 type formDataType = {
     email: string;
     password: string;

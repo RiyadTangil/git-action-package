@@ -1,4 +1,4 @@
-import "./MobileViewComponent.css";
-declare const MobileViewCalender: () => JSX.Element;
+
+declare const MobileViewCalender: () => import("react/jsx-runtime").JSX.Element;
 export default MobileViewCalender;
 //# sourceMappingURL=MobileViewCalender.d.ts.map

@@ -1,5 +1,4 @@
-/// <reference types="react" />
-import "./EventPreview.css";
+
 declare function EventPreview({ formData, tZone, images, handleDisclaimerStatus, setPreview, updateEventPhotos, isEditing, }: {
     formData: any;
     tZone: any;
@@ -8,6 +7,6 @@ declare function EventPreview({ formData, tZone, images, handleDisclaimerStatus,
     setPreview: any;
     updateEventPhotos: any;
     isEditing: any;
-}): JSX.Element;
+}): import("react/jsx-runtime").JSX.Element;
 export default EventPreview;
 //# sourceMappingURL=EventPreview.d.ts.map

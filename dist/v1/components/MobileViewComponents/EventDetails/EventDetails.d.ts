@@ -1,4 +1,4 @@
-import "react-loading-skeleton/dist/skeleton.css";
-declare const EventDetails: () => JSX.Element;
+
+declare const EventDetails: () => import("react/jsx-runtime").JSX.Element;
 export default EventDetails;
 //# sourceMappingURL=EventDetails.d.ts.map

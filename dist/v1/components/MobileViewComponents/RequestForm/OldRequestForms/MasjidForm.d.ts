@@ -1,5 +1,5 @@
-import React from "react";
-import "./Masjidform.css";
+import { default as React } from 'react';
+
 interface MasjidFormProps {
     formSubmitted: boolean;
     userEmail: string;
