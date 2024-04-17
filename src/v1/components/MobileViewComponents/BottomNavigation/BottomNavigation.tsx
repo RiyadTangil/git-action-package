@@ -162,7 +162,7 @@ const BottomNavigation = () => {
       <div
         className={`bottom-nav-component ${activeTab !== 0 ? "d-flex" : ""}`}
       >
-        {navigationData[activeTab].content}
+        {/* {navigationData[activeTab].content} */}
       </div>
       <div className="bottom-nav-with-condition">
         <div className="bottom-navigation">

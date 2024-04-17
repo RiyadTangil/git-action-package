@@ -33876,7 +33876,7 @@ const x$ = ({ routes: e }) => {
       r
     )) })
   ] });
-}, N$ = hW(() => import("./Dashboard-DJ12_Yat.mjs").then((e) => e.D)), E$ = hW(() => import("./Widgets-B_HMIcgR.mjs"));
+}, N$ = hW(() => import("./Dashboard-CL4tlYjM.mjs").then((e) => e.D)), E$ = hW(() => import("./Widgets-H3CimJRL.mjs"));
 function Sd0() {
   const e = (r, a) => n && n.isVerified ? /* @__PURE__ */ M.jsx(JM, { to: a }) : r, t = localStorage.getItem("admin"), n = t ? JSON.parse(t) : null, o = [
     {
@@ -59388,8 +59388,7 @@ const Bd0 = () => {
     /* @__PURE__ */ M.jsx(
       "div",
       {
-        className: `bottom-nav-component ${e !== 0 ? "d-flex" : ""}`,
-        children: l[e].content
+        className: `bottom-nav-component ${e !== 0 ? "d-flex" : ""}`
       }
     ),
     /* @__PURE__ */ M.jsxs("div", { className: "bottom-nav-with-condition", children: [
