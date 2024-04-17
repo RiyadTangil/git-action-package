@@ -33876,7 +33876,7 @@ const x$ = ({ routes: e }) => {
       r
     )) })
   ] });
-}, N$ = hW(() => import("./Dashboard-CL4tlYjM.mjs").then((e) => e.D)), E$ = hW(() => import("./Widgets-H3CimJRL.mjs"));
+}, N$ = hW(() => import("./Dashboard--h7EiDts.mjs").then((e) => e.D)), E$ = hW(() => import("./Widgets-Dsd3SrKm.mjs"));
 function Sd0() {
   const e = (r, a) => n && n.isVerified ? /* @__PURE__ */ M.jsx(JM, { to: a }) : r, t = localStorage.getItem("admin"), n = t ? JSON.parse(t) : null, o = [
     {
@@ -59745,6 +59745,7 @@ export {
   $b0 as ew,
   Sd0 as ex,
   Cd0 as ey,
+  Li0 as ez,
   Td0 as f,
   pd0 as g,
   wO as h,

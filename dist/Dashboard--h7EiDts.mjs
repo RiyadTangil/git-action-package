@@ -1,4 +1,4 @@
-import { c as Z, f as J, g as U, u as q, a as D, b as G, d as $, t as M, _ as E, j as e, B as H, E as K, C as Q, e as X, h as Y, i as I, k as V, M as ee, l as O, D as se, m as te, N as ne, n as ie, R as ae, o as N, p as oe, q as re, r as le, S as ce } from "./index-IlHv0hMp.mjs";
+import { c as Z, f as J, g as U, u as q, a as D, b as G, d as $, t as M, _ as E, j as e, B as H, E as K, C as Q, e as X, h as Y, i as I, k as V, M as ee, l as O, D as se, m as te, N as ne, n as ie, R as ae, o as N, p as oe, q as re, r as le, S as ce } from "./index-CAznm34G.mjs";
 import f, { lazy as x, useState as j, useEffect as _, Suspense as de } from "react";
 import { p as me } from "./PLACEHOLDER-event-l-Oe2vMs.mjs";
 const pe = (i, t) => async () => {
@@ -65,7 +65,7 @@ const fe = (i) => async () => {
     };
   }
 }, je = x(
-  () => import("./PieChartComponent-CYc6Hwu9.mjs")
+  () => import("./PieChartComponent-Cb8uhmMo.mjs")
 ), ge = () => {
   var S;
   const i = q();
@@ -224,28 +224,28 @@ const fe = (i) => async () => {
   return n && n.isVerified ? /* @__PURE__ */ e.jsx(e.Fragment, { children: i.component }) : /* @__PURE__ */ e.jsx(ne, { to: "/login" });
 };
 x(
-  () => import("./LandingFeedPage-Cl1MnEjS.mjs")
+  () => import("./LandingFeedPage-DZL04AMy.mjs")
 );
 x(
-  () => import("./AdminProfile-Cz8H3v2z.mjs")
+  () => import("./AdminProfile-XLgwkxQU.mjs")
 );
 x(
-  () => import("./MasjidProfile-Djw3qB4l.mjs")
+  () => import("./MasjidProfile-BJPttpjS.mjs")
 );
 x(
-  () => import("./MasjidAnnouncementPage-Bq2Q4WLZ.mjs")
+  () => import("./MasjidAnnouncementPage-Db3i8cJD.mjs")
 );
 x(
-  () => import("./MasjidEventsPage-Cw79hIMs.mjs")
+  () => import("./MasjidEventsPage-CgNLZq7-.mjs")
 );
 x(
-  () => import("./EventProfile-DTgnvM8k.mjs")
+  () => import("./EventProfile-Djo2iTYb.mjs")
 );
 x(
-  () => import("./MasjidTimings-DvCmZ3R6.mjs")
+  () => import("./MasjidTimings-Tq6V2U-j.mjs")
 );
 x(
-  () => import("./MasjidUploadTimings-BhJWldaQ.mjs")
+  () => import("./MasjidUploadTimings-C26wCyer.mjs")
 );
 const ye = () => {
   const i = $(), t = localStorage.getItem("admin"), n = t ? JSON.parse(t) : null;
