@@ -1,7 +1,8 @@
-import { ex as s, q as i, ez as r, ey as d } from "./index-CAznm34G.mjs";
+import { ex as a, q as o, ez as i, ey as r, eA as d } from "./index-BrmRL7Ll.mjs";
 export {
-  s as App,
-  i as MasjidAdmin,
-  r as MasjidProfile,
-  d as MyProvider
+  a as App,
+  o as MasjidAdmin,
+  i as MasjidProfile,
+  r as MyProvider,
+  d as PostsComponent
 };
