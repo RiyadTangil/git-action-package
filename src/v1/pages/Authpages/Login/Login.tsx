@@ -17,6 +17,7 @@ import LogoMain from "../../../photos/Newuiphotos/CM Logo/CM Logo.svg";
 import ReCAPTCHA from "react-google-recaptcha";
 import PasswordInput from "../../Shared/PasswordInput/PasswordInput";
 import { useAppThunkDispatch } from "../../../redux/hooks";
+import PostsComponent from "../../../components/MobileViewComponents/PostsComponent/PostsComponent";
 // import { Box, FormControlLabel, Grow, Slide, Switch } from "@mui/material";
 interface ResultType {
   success: boolean;
@@ -133,6 +134,8 @@ const Login = () => {
       <div className="LoginHeadContainer">
         <div className="LoginLeftContainer">
           <div className="BannerPoppupMain">
+      
+
             <Dialog open={OpenModal}>
               <DialogTitle> {language.MODAL.MODAL_TITLE}</DialogTitle>
               <DialogContent>

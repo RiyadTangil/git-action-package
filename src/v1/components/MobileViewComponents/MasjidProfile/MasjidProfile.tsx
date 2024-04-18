@@ -27,8 +27,10 @@ import { FetchingTimingsByDateRange } from "../../../redux/actions/TimingsAction
 import Slider from "react-slick";
 import EditMasjid from "./EditMasjid";
 import MagnifierComponent from "../Shared/Magnifier/MagnifierComponent";
-
-const MasjidProfile = () => {
+type MasjidProfileProps = {
+  masjidId: string;
+};
+const MasjidProfile = ({ masjidId }: MasjidProfileProps) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   let AdminMasjidState = useAppSelector((state) => state.AdminMasjid);
   const [allPrayer, setAllPrayer] = useState<PrayerTimings<number>[]>([]);
@@ -44,7 +46,7 @@ const MasjidProfile = () => {
   const dispatch = useAppThunkDispatch();
 
   const masjidAPIRequest = () => {
-    const response = dispatch(fetchMasjidById(admin?.masjids[0]));
+    const response = dispatch(fetchMasjidById(masjidId));
     response.then(function (result) {
       if (result?.masjidName) {
         setTzone(timeZoneGetter(result));
@@ -59,7 +61,7 @@ const MasjidProfile = () => {
       setMasjid(AdminMasjidState);
       setTzone(timeZoneGetter(AdminMasjidState));
       localStorage.setItem("MasjidtZone", timeZoneGetter(AdminMasjidState));
-    } else if (admin?.masjids[0]) {
+    } else if (masjidId) {
       masjidAPIRequest();
     }
   }, []);
@@ -75,7 +77,7 @@ const MasjidProfile = () => {
   };
 
   useEffect(() => {
-    if (admin?.masjids[0]) {
+    if (masjidId) {
       const startMonth = moment()
         .startOf("month")
         .format("YYYY-MM-DDTHH:mm:ss.SSS[Z]");
@@ -84,7 +86,7 @@ const MasjidProfile = () => {
         .endOf("month")
         .format("YYYY-MM-DDTHH:mm:ss.SSS[Z]");
       const res = dispatch(
-        FetchingTimingsByDateRange(startMonth, endNextMonth, admin.masjids[0])
+        FetchingTimingsByDateRange(startMonth, endNextMonth, masjidId)
       );
       res.then((result) => {
         if (result.status === 200) {
@@ -95,7 +97,7 @@ const MasjidProfile = () => {
         }
       });
     }
-  }, [admin]);
+  }, [masjidId]);
 
   const masjidReloader = () => {
     masjidAPIRequest();
@@ -122,7 +124,7 @@ const MasjidProfile = () => {
   }, []);
 
   const modalOpener = async () => {
-    if (!admin?.masjids[0]) {
+    if (!masjidId) {
       const result = await swal({
         title: "Oops",
         text: "You have no masjid assigned. Contact Admin to assign masjid",
@@ -209,7 +211,7 @@ const MasjidProfile = () => {
         setOpenMasjidEdit={setOpenMasjidEdit}
         masjid={masjid}
         masjidReloader={masjidReloader}
-        masjidId={admin?.masjids[0]}
+        masjidId={masjidId}
       />
     );
 
@@ -267,7 +269,7 @@ const MasjidProfile = () => {
                 </div>
               </div>
 
-              {!admin?.masjids[0] ? (
+              {!masjidId ? (
                 <div>
                   {!formSubmitted && (
                     <>
