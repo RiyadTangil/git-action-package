@@ -77,7 +77,7 @@ const BottomNavigation = () => {
       label: "Home",
       icon: homeIcon,
       activeIcon: homeIconActive,
-      content: <MasjidProfile />,
+      content: <MasjidProfile masjidId={"641eeb402903cb869dd4cb4c"} />,
     },
     {
       label: "Prayer Timing",
@@ -162,7 +162,7 @@ const BottomNavigation = () => {
       <div
         className={`bottom-nav-component ${activeTab !== 0 ? "d-flex" : ""}`}
       >
-        {/* {navigationData[activeTab].content} */}
+        {navigationData[activeTab].content}
       </div>
       <div className="bottom-nav-with-condition">
         <div className="bottom-navigation">

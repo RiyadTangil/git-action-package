@@ -3,7 +3,7 @@ import { Navigate } from "react-router-dom";
 
 import Snackbar from "./v1/components/HelperComponents/SnackbarCompoenent/Snackbar";
 import { AdminInterFace } from "./v1/redux/Types/index.js";
-import "./App.css";
+import "./App.module.css";
 
 import Login from "./v1/pages/Authpages/Login/Login";
 import ForgotPassword from "./v1/pages/Authpages/ForgotPassword/ForgotPassword";
