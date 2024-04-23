@@ -3,8 +3,7 @@ import { Navigate } from "react-router-dom";
 
 import Snackbar from "./v1/components/HelperComponents/SnackbarCompoenent/Snackbar";
 import { AdminInterFace } from "./v1/redux/Types/index.js";
-import "./App.module.css";
-
+import "./App.css";
 import Login from "./v1/pages/Authpages/Login/Login";
 import ForgotPassword from "./v1/pages/Authpages/ForgotPassword/ForgotPassword";
 // import SetPassword from "./v1/pages/Authpages/ResetPassword/SetPassword";
@@ -19,7 +18,7 @@ import Theme from "./v1/components/Theme/Theme";
 import Common_App from "./v1/Common/Common_App";
 
 const Dashboard = lazy(() => import("./v1/pages/DashboardPage/Dashboard"));
-const Widgets = lazy(() => import("./v1/components/Widgets/Widgets"));
+
 
 function App() {
   const elementHandler = (component: React.ReactNode, route: string) => {
@@ -84,11 +83,7 @@ function App() {
       element: <RequestUserForm />,
       protected: false,
     },
-    {
-      path: "/widget/:widgetType",
-      element: <Widgets />,
-      protected: false,
-    },
+   
     {
       path: "/DeleteAccountConfirm",
       element: <DeleteAccount />,
