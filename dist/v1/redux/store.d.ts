@@ -1,5 +1,5 @@
 declare const Store: import('@reduxjs/toolkit/dist/configureStore').ToolkitStore<import("redux").EmptyObject & {
-    admin: import("./Types").User | import("./Types").AdminInterFace;
+    admin: never;
     selectedDate: string[];
     latestAdminEvents: any;
     AdminMasjid: any;
@@ -17,7 +17,7 @@ declare const Store: import('@reduxjs/toolkit/dist/configureStore').ToolkitStore
     type: string;
     payload: string[];
 }, [import("@reduxjs/toolkit").ThunkMiddleware<import("redux").CombinedState<{
-    admin: import("./Types").User | import("./Types").AdminInterFace;
+    admin: never;
     selectedDate: string[];
     latestAdminEvents: any;
     AdminMasjid: any;

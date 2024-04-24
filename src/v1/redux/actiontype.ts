@@ -1,5 +1,6 @@
 export const AUTH_LOGIN = "AUTH_LOGIN";
 export const AUTH_LOGOUT = "AUTH_LOGOUT";
+export const MASJID_ID_SETTER = "MASJID_ID_SETTER";
 
 export const CHANGE_SNACKBAR = "CHANGE_SNACKBAR";
 

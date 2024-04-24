@@ -1,5 +1,5 @@
 import { AdminInterFace, User, UserActionType } from "../../Types";
-import { AUTH_LOGIN } from "../../actiontype";
+import { AUTH_LOGIN, MASJID_ID_SETTER } from "../../actiontype";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 const initialUser = {
@@ -17,6 +17,10 @@ const LoginReducer = (admin: User = initialUser, action: UserActionType) => {
     case AUTH_LOGIN:
       localStorage.setItem("admin", JSON.stringify(action.payload));
       return action.payload;
+    case MASJID_ID_SETTER:
+      const userWithMasjidId = { ...admin, masjids: [action.payload] };
+      localStorage.setItem("admin", JSON.stringify(userWithMasjidId));
+      return userWithMasjidId;
 
     default:
       const adminString = localStorage.getItem("admin");

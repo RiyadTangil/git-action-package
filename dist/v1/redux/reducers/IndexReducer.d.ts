@@ -1,5 +1,5 @@
 declare const indexReducer: import('redux').Reducer<import("redux").CombinedState<{
-    admin: import("../Types").User | import("../Types").AdminInterFace;
+    admin: never;
     selectedDate: string[];
     latestAdminEvents: any;
     AdminMasjid: any;
