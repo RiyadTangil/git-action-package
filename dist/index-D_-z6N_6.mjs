@@ -24027,7 +24027,7 @@ X1.formToJSON = (e) => C7(m0.isHTMLForm(e) ? new FormData(e) : e);
 X1.getAdapter = x7.getAdapter;
 X1.HttpStatusCode = Fk;
 X1.default = X1;
-const hs = "https://dev.admin-api.connectmazjid.com/api/v2", le = X1.create({
+const hs = "https://dev-admin-api.connectmazjid.com/api/v2", le = X1.create({
   baseURL: hs
 }), v5 = localStorage.getItem("authTokens"), St = v5 ? JSON.parse(v5) : null, Hk = () => (X1.defaults.headers.common.Authorization = `Bearer ${St == null ? void 0 : St.refreshToken}`, X1.post(`${hs}/auth/refresh-token`).then((e) => {
   localStorage.setItem("authTokens", JSON.stringify(e.data.data));
@@ -33487,7 +33487,7 @@ const CK = ({ routes: e }) => {
       r
     )) })
   ] });
-}, wK = EY(() => import("./Dashboard-Bcnu2qPA.mjs"));
+}, wK = EY(() => import("./Dashboard-CpoinG7x.mjs"));
 function jl0() {
   const e = (r, a) => n && n.isVerified ? /* @__PURE__ */ M.jsx(FM, { to: a }) : r, t = localStorage.getItem("admin"), n = t ? JSON.parse(t) : null, o = [
     {
@@ -59013,6 +59013,15 @@ const Hl0 = () => {
     ] }),
     /* @__PURE__ */ M.jsx(Ct, { variant: "body2", component: "p", children: o.body })
   ] }) }, o.id)) });
+}, Zl0 = (e) => async (t) => {
+  try {
+    t({
+      type: "AUTH_LOGIN",
+      payload: { masjids: [e.masjidId] }
+    });
+  } catch {
+    return null;
+  }
 };
 export {
   jl0 as A,
@@ -59025,5 +59034,6 @@ export {
   Sa0 as b,
   np0 as f,
   M as j,
+  Zl0 as m,
   at as u
 };

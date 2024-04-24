@@ -192,24 +192,24 @@ const MobileViewCalender = () => {
     return "";
   };
 
-  const handleDeleteAllByRange = () => {
-    // moment(selectedStartDate).add("days", i);
-    let start = moment(selectedDates[0])
-      .subtract("days", 1)
-      .format("YYYY-MM-DD");
-    let end = moment(selectedDates[1]).format("YYYY-MM-DD");
-    const res = dispatch(
-      DeletingAllTimingsByDateRange(start, end, admin.masjids[0])
-    );
-    res.then((result) => {
-      if (result.message === "Timings deleted") {
-        setReload(!reloadTiming);
-        setRangeHasTimings(false);
-      } else {
-        toast.error("Failed to Delete Timings" + result.message);
-      }
-    });
-  };
+  // const handleDeleteAllByRange = () => {
+  //   // moment(selectedStartDate).add("days", i);
+  //   let start = moment(selectedDates[0])
+  //     .subtract("days", 1)
+  //     .format("YYYY-MM-DD");
+  //   let end = moment(selectedDates[1]).format("YYYY-MM-DD");
+  //   const res = dispatch(
+  //     DeletingAllTimingsByDateRange(start, end, admin.masjids[0])
+  //   );
+  //   res.then((result) => {
+  //     if (result.message === "Timings deleted") {
+  //       setReload(!reloadTiming);
+  //       setRangeHasTimings(false);
+  //     } else {
+  //       toast.error("Failed to Delete Timings" + result.message);
+  //     }
+  //   });
+  // };
 
   const tileDisabled = ({ date }: { date: Date }) => {
     const currentDate = LocationBasedToday(tZone);

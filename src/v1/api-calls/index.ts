@@ -17,7 +17,7 @@ import {
 //   window.location.hostname === "musali-admin.netlify.app"
 //     ? "https://dev-admin-api.connectmazjid.com/api/v2"
 //     : import.meta.env.VITE_ADMIN_BASE_URL; //test API
-export const rootURL ="https://dev.admin-api.connectmazjid.com/api/v2"
+export const rootURL ="https://dev-admin-api.connectmazjid.com/api/v2"
 
 const API = axios.create({
   baseURL: rootURL,

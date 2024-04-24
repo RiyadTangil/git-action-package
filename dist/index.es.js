@@ -1,8 +1,9 @@
-import { A as o, B as i, b as r, M as d, P as e } from "./index-BL3X3yJ3.mjs";
+import { A as o, B as d, b as e, M as i, P as r, m } from "./index-D_-z6N_6.mjs";
 export {
   o as App,
-  i as MasjidAdmin,
-  r as MasjidProfile,
-  d as MyProvider,
-  e as PostsComponent
+  d as MasjidAdmin,
+  e as MasjidProfile,
+  i as MyProvider,
+  r as PostsComponent,
+  m as masjidIdSetter
 };

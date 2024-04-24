@@ -59,15 +59,7 @@ export type CommonActionType = {
   payload: any;
 };
 export type User = {
-  autoPrefillingTiming: boolean;
-  email: string;
-  isVerified: boolean;
-  masjids: any[];
-  name: string;
-  role: string;
-  _id: string;
-  updatedAt?: string;
-  createdAt?: string;
+  masjids: string[];
 };
 
 export type UserActionType = {
