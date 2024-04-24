@@ -1,6 +1,6 @@
 import { Masjid, AuthDataType, AddingEvent, NamazTimings, NamajTiming, optionalTimings } from '../redux/Types';
 
-export declare const rootURL: any;
+export declare const rootURL = "https://dev.admin-api.connectmazjid.com/api/v2";
 type formDataType = {
     email: string;
     password: string;

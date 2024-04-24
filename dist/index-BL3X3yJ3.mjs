@@ -24027,7 +24027,7 @@ X1.formToJSON = (e) => C7(m0.isHTMLForm(e) ? new FormData(e) : e);
 X1.getAdapter = x7.getAdapter;
 X1.HttpStatusCode = Fk;
 X1.default = X1;
-const hs = window.location.hostname === "musali-admin.netlify.app" ? "https://dev-admin-api.connectmazjid.com/api/v2" : "https://admin-api.connectmazjid.com/api/v2", le = X1.create({
+const hs = "https://dev.admin-api.connectmazjid.com/api/v2", le = X1.create({
   baseURL: hs
 }), v5 = localStorage.getItem("authTokens"), St = v5 ? JSON.parse(v5) : null, Hk = () => (X1.defaults.headers.common.Authorization = `Bearer ${St == null ? void 0 : St.refreshToken}`, X1.post(`${hs}/auth/refresh-token`).then((e) => {
   localStorage.setItem("authTokens", JSON.stringify(e.data.data));
@@ -32998,9 +32998,7 @@ const _o = /* @__PURE__ */ dt(OK), Xe = (e, t) => {
 }, hK = () => {
   const e = localStorage.getItem("authTokens"), t = e ? JSON.parse(e) : null;
   return t == null ? void 0 : t.refreshToken;
-}, WK = window.location.hostname === "musali-admin.netlify.app" ? "https://dev-api.connectmazjid.com/api/v2" : "https://api.connectmazjid.com/api/v2";
-console.log("API Base URL:", window.location.hostname);
-const ih = localStorage.getItem("authTokens"), gd = ih ? JSON.parse(ih) : null, fa = X1.create({
+}, WK = "https://dev.api.connectmazjid.com/api/v2", ih = localStorage.getItem("authTokens"), gd = ih ? JSON.parse(ih) : null, fa = X1.create({
   baseURL: WK
 }), mK = () => (X1.defaults.headers.common.Authorization = `Bearer ${hK()}`, X1.post(hs + "/auth/refresh-token").then((e) => {
   localStorage.setItem("authTokens", JSON.stringify(e.data.data));
@@ -33489,7 +33487,7 @@ const CK = ({ routes: e }) => {
       r
     )) })
   ] });
-}, wK = EY(() => import("./Dashboard-DJTqo6LL.mjs"));
+}, wK = EY(() => import("./Dashboard-Bcnu2qPA.mjs"));
 function jl0() {
   const e = (r, a) => n && n.isVerified ? /* @__PURE__ */ M.jsx(FM, { to: a }) : r, t = localStorage.getItem("admin"), n = t ? JSON.parse(t) : null, o = [
     {
