@@ -1,5 +1,5 @@
 import React, { useRef, useContext, useState } from "react";
-import "./ResetPassword.css";
+
 import { AiFillEye } from "react-icons/ai";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { Link } from "react-router-dom";

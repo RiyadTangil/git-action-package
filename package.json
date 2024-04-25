@@ -1,6 +1,6 @@
 {
   "name": "@RiyadTangil/tryingto-push-package",
-  "version": "1.0.19",
+  "version": "1.0.21",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },

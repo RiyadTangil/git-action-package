@@ -1,7 +1,6 @@
 import React, { useRef, useState } from "react";
 import LogoMain from "../../../../photos/Newuiphotos/CM Logo/cmlogofor.svg";
 import { resources } from "../../../../resources/resources";
-import "./SetPassword.css";
 import CloseIcon from "@mui/icons-material/Close";
 import ResetPassIcon from "../../../../photos/Newuiphotos/Icons/resetPass.svg";
 import { AiFillEye } from "react-icons/ai";

@@ -11,7 +11,7 @@ import { VerifyingTwoFactorAuth } from "../../../redux/actions/AuthActions/Verif
 import LogoMain from "../../../photos/LogoMain.png";
 import { ChangeSnackbar } from "../../../redux/actions/SnackbarActions/ChangeSnackbarAction";
 import { resetPasswordInitial } from "../../../redux/actions/AuthActions/ResetPasswordInitial";
-import "./SetPassword.css";
+
 import WELCOMEONBOARD from "../../../photos/WELCOMEONBOARD.png";
 import BackgroungWelcome from "../../../photos/BackgroungWelcome.png";
 import jwt_decode from "jwt-decode";

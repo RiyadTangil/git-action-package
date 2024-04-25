@@ -18,7 +18,8 @@ const LoginReducer = (admin: User = initialUser, action: UserActionType) => {
       localStorage.setItem("admin", JSON.stringify(action.payload));
       return action.payload;
     case MASJID_ID_SETTER:
-      const userWithMasjidId = { ...admin, masjids: [action.payload] };
+      const { masjids } = action.payload;
+      const userWithMasjidId = { ...admin, ...masjids };
       localStorage.setItem("admin", JSON.stringify(userWithMasjidId));
       return userWithMasjidId;
 

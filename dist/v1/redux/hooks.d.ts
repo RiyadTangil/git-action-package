@@ -4,7 +4,7 @@ import { ThunkDispatch } from 'redux-thunk';
 import { TypedUseSelectorHook } from 'react-redux';
 
 export declare const useAppDispatch: () => ThunkDispatch<import('redux').CombinedState<{
-    admin: never;
+    admin: import("./Types").User | import("./Types").AdminInterFace;
     selectedDate: string[];
     latestAdminEvents: any;
     AdminMasjid: any;

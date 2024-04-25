@@ -33487,7 +33487,7 @@ const CK = ({ routes: e }) => {
       r
     )) })
   ] });
-}, wK = EY(() => import("./Dashboard-ByeP0qpj.mjs"));
+}, wK = EY(() => import("./Dashboard-NdvM_9Gq.mjs"));
 function Fl0() {
   const e = (r, a) => n && n.isVerified ? /* @__PURE__ */ M.jsx(FM, { to: a }) : r, t = localStorage.getItem("admin"), n = t ? JSON.parse(t) : null, o = [
     {
@@ -35000,11 +35000,11 @@ const Y$ = "AUTH_LOGIN", T$ = "MASJID_ID_SETTER", S$ = "CHANGE_SNACKBAR", R$ = "
     case Y$:
       return localStorage.setItem("admin", JSON.stringify(t.payload)), t.payload;
     case T$:
-      const n = { ...e, masjids: [t.payload] };
-      return localStorage.setItem("admin", JSON.stringify(n)), n;
+      const { masjids: n } = t.payload, o = { ...e, ...n };
+      return localStorage.setItem("admin", JSON.stringify(o)), o;
     default:
-      const o = localStorage.getItem("admin"), r = o ? JSON.parse(o) : null;
-      return r != null && r.email ? r : e;
+      const r = localStorage.getItem("admin"), a = r ? JSON.parse(r) : null;
+      return a != null && a.email ? a : e;
   }
 }, P$ = (e = [], t) => {
   switch (t.type) {

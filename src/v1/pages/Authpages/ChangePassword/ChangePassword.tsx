@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AdminInterFace } from "../../../redux/Types";
-import "./ChagePassword.css";
+
 import CustomBtn from "../../../components/MobileViewComponents/Shared/CustomBtn";
 import ChangePassIcon from "../../../photos/Newuiphotos/Icons/resetPass.svg";
 import { resources } from "../../../resources/resources";

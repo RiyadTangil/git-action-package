@@ -1,4 +1,3 @@
-
 type propsType = {
     email: string;
 };

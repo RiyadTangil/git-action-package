@@ -13,7 +13,7 @@ import { AiFillEyeInvisible } from "react-icons/ai";
 import { useAppThunkDispatch } from "../../../../redux/hooks";
 import resetSuccessIcon from "../../../../photos/Newuiphotos/Icons/successTick.svg";
 import { useNavigate } from "react-router-dom";
-import "./ResetPassword.css";
+
 
 type propsType = {
   email: string;
